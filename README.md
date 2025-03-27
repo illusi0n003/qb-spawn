@@ -1,12 +1,6 @@
 # qb-spawn
 Spawn Selector for QB-Core Framework :eagle:
 
-
-# Example of the qb-spawn
-
-![qb-spawn](https://github.com/user-attachments/assets/388310d7-1f28-4b34-8924-cd4d429a587c)
-
-
 # License
 
     QBCore Framework
@@ -32,8 +26,8 @@ Spawn Selector for QB-Core Framework :eagle:
 - [qb-apartment](https://github.com/qbcore-framework/qb-apartment) - Lets player select the apartment
 - [qb-garages](https://github.com/qbcore-framework/qb-garages) - For house garages
 
-## Screenshots
-![Spawn selector](https://i.imgur.com/nz0mPGe.png)
+## Screenshots of the reworked qb-spawn
+![qb-spawn](https://github.com/user-attachments/assets/388310d7-1f28-4b34-8924-cd4d429a587c)
 
 ## Features
 - Ability to select spawn after selecting the character
