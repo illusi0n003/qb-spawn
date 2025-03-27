@@ -1,6 +1,12 @@
 # qb-spawn
 Spawn Selector for QB-Core Framework :eagle:
 
+
+# Example of the qb-spawn
+
+![qb-spawn](https://github.com/user-attachments/assets/388310d7-1f28-4b34-8924-cd4d429a587c)
+
+
 # License
 
     QBCore Framework
