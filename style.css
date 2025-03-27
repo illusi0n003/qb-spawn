@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap");
+
+:root {
+    /* Primary Color Palette */
+    --md-primary: #f44336;
+    --md-on-primary: #ffffff;
+    --md-primary-container: #ffdad6;
+    --md-on-primary-container: #410802;
+    
+    /* Extended Color Scheme */
+    --md-secondary: #ff7961;
+    --md-on-secondary: #000000;
+    --md-secondary-container: #ba000d;
+    --md-on-secondary-container: #ffdad6;
+    
+    --md-tertiary: #ff9e80;
+    --md-on-tertiary: #000000;
+    --md-tertiary-container: #ff7043;
+    --md-on-tertiary-container: #ffe0e0;
+    
+    /* Surface Colors */
+    --md-surface: #1c1b1f;
+    --md-on-surface: #e6e1e5;
+    --md-surface-dim: #141218;
+    --md-surface-bright: #232127;
+    --md-surface-container-lowest: #0f0d13;
+    --md-surface-container-low: #1d1b20;
+    --md-surface-container: #211f26;
+    --md-surface-container-high: #2b2930;
+    --md-surface-container-highest: #36343b;
+    
+    /* Status Colors */
+    --md-error: #ba1a1a;
+    --md-on-error: #ffffff;
+    --md-error-container: #ffdad6;
+    --md-on-error-container: #410002;
+    --md-success: #4caf50;
+    --md-on-success: #ffffff;
+    --md-success-container: #2e7d32;
+    --md-on-success-container: #c8e6c9;
+    --md-warning: #ff9800;
+    --md-on-warning: #000000;
+    --md-warning-container: #e65100;
+    --md-on-warning-container: #ffe0b2;
+    
+    /* Outline & Shadows */
+    --md-outline: #938f99;
+    --md-outline-variant: #49454f;
+    --md-shadow: rgba(0, 0, 0, 0.3);
+    --md-scrim: rgba(0, 0, 0, 0.5);
+    
+    /* Shapes */
+    --md-radius-small: 8px;
+    --md-radius-medium: 12px;
+    --md-radius-large: 16px;
+    --md-radius-extra-large: 28px;
+
+    /* Elevation */
+    --md-elevation-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    --md-elevation-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.2);
+    --md-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.2);
+    --md-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.2);
+    --md-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.2);
+
+    /* Typography */
+    --font-primary: "Exo 2", sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+/* Base Styles */
+#app {
+    font-family: var(--font-primary);
+    color: var(--md-on-surface);
+    background-color: var(--md-surface);
+}
+
+/* Spawn Locations Panel */
+.spawn-locations {
+    position: absolute;
+    min-width: 30vh;
+    width: fit-content;
+    max-width: 35vh;
+    top: 10vh;
+    left: 10vh;
+    background-color: var(--md-surface-container);
+    border: 1px solid var(--md-outline-variant);
+    box-shadow: var(--md-elevation-3);
+    border-radius: var(--md-radius-large);
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+/* Location Buttons */
+.location {
+    width: 100%;
+    margin-bottom: 12px;
+    transition: all 0.2s ease;
+    background-color: var(--md-surface-container-high) !important;
+    border-radius: var(--md-radius-small) !important;
+}
+
+.v-btn.location:hover {
+    background-color: var(--md-primary-container) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--md-elevation-1);
+}
+
+.v-btn.location .v-btn__content {
+    color: var(--md-on-surface) !important;
+    font-weight: var(--font-weight-medium) !important;
+    letter-spacing: 0.1em;
+}
+
+.v-btn.location.selected {
+    background-color: var(--md-primary) !important;
+    box-shadow: 0 0 0 1px var(--md-primary-container);
+}
+
+.v-btn.location.selected .v-btn__content {
+    color: var(--md-on-primary) !important;
+}
+
+/* Submit Button */
+.submit-spawn {
+    background-color: var(--md-primary) !important;
+    width: 100%;
+    margin-top: 16px;
+    border-radius: var(--md-radius-medium) !important;
+    transition: all 0.3s ease;
+}
+
+.v-btn.submit-spawn .v-btn__content {
+    color: var(--md-on-primary) !important;
+    font-weight: var(--font-weight-medium) !important;
+    letter-spacing: 0.1em;
+}
+
+.submit-spawn:hover {
+    background-color: var(--md-primary-container) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--md-elevation-1);
+}
+
+/* Header */
+.spawn_locations-header {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--md-outline-variant);
+}
+
+.spawn_locations-header > p {
+    color: var(--md-on-surface);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Animations */
+.slide-top-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+.slide-top-fade-leave-active {
+    transition: all 0.5s cubic-bezier(1, 0.7, 0.9, 1);
+}
+.slide-top-fade-enter-from,
+.slide-top-fade-leave-to {
+    transform: translateY(-10%);
+    opacity: 0 !important;
+}
+
+/* Vuetify Overrides */
+.v-application {
+    background-color: transparent !important;
+}
+
+.v-text-field.v-text-field--solo .v-input__control {
+    background-color: var(--md-surface-container-high) !important;
+    border-radius: var(--md-radius-medium) !important;
+    border: 1px solid var(--md-outline) !important;
+}
+
+.v-menu__content {
+    background-color: var(--md-surface-container) !important;
+    border: 1px solid var(--md-outline) !important;
+    border-radius: var(--md-radius-medium) !important;
+    box-shadow: var(--md-elevation-3) !important;
+}
