@@ -1,49 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap");
 
 :root {
-    /* Dark Theme Variables */
-    --md-dark-primary: #f44336;
-    --md-dark-on-primary: #ffffff;
-    --md-dark-primary-container: #ffdad6;
-    --md-dark-on-primary-container: #410002;
-    --md-dark-secondary: #d32f2f;
-    --md-dark-on-secondary: #ffffff;
-    --md-dark-secondary-container: #ffdad5;
-    --md-dark-on-secondary-container: #410001;
-    --md-dark-tertiary: #ff8a65;
-    --md-dark-on-tertiary: #ffffff;
-    --md-dark-tertiary-container: #ffdacc;
-    --md-dark-on-tertiary-container: #410002;
-    --md-dark-surface: #1c1b1f;
-    --md-dark-on-surface: #e6e1e5;
-    --md-dark-surface-container-lowest: #0f0d13;
-    --md-dark-surface-container-low: #1d1b20;
-    --md-dark-surface-container: #211f26;
-    --md-dark-surface-container-high: #2b2930;
-    --md-dark-surface-container-highest: #36343b;
-    --md-dark-error: #b3261e;
-    --md-dark-on-error: #ffffff;
-    --md-dark-error-container: #93000a;
-    --md-dark-on-error-container: #ffdad5;
-    --md-dark-outline: #79747e;
-    --md-dark-outline-variant: #49454f;
-    --md-dark-inverse-surface: #e6e1e5;
-    --md-dark-inverse-on-surface: #1c1b1f;
-    --md-dark-scrim: rgba(0, 0, 0, 0.6);
-    --md-dark-shadow: rgba(0, 0, 0, 0.15);
-    --md-dark-success: #9bd880;
-    --md-dark-on-success: #193800;
-    --md-dark-success-container: #275000;
-    --md-dark-on-success-container: #b6f397;
-    --md-dark-warning: #ffba47;
-    --md-dark-on-warning: #422b00;
-    --md-dark-warning-container: #5f3f00;
-    --md-dark-on-warning-container: #ffddb0;
-    --md-dark-info: #b3c5ff;
-    --md-dark-on-info: #002a77;
-    --md-dark-info-container: #003ea7;
-    --md-dark-on-info-container: #dae1ff;
-
+    /* Primary Color Palette */
+    --md-primary: #f44336;
+    --md-on-primary: #ffffff;
+    --md-primary-container: #ffdad6;
+    --md-on-primary-container: #410802;
+    
+    /* Extended Color Scheme */
+    --md-secondary: #ff7961;
+    --md-on-secondary: #000000;
+    --md-secondary-container: #ba000d;
+    --md-on-secondary-container: #ffdad6;
+    
+    --md-tertiary: #ff9e80;
+    --md-on-tertiary: #000000;
+    --md-tertiary-container: #ff7043;
+    --md-on-tertiary-container: #ffe0e0;
+    
+    /* Surface Colors */
+    --md-surface: #1c1b1f;
+    --md-on-surface: #e6e1e5;
+    --md-surface-dim: #141218;
+    --md-surface-bright: #232127;
+    --md-surface-container-lowest: #0f0d13;
+    --md-surface-container-low: #1d1b20;
+    --md-surface-container: #211f26;
+    --md-surface-container-high: #2b2930;
+    --md-surface-container-highest: #36343b;
+    
+    /* Status Colors */
+    --md-error: #ba1a1a;
+    --md-on-error: #ffffff;
+    --md-error-container: #ffdad6;
+    --md-on-error-container: #410002;
+    --md-success: #4caf50;
+    --md-on-success: #ffffff;
+    --md-success-container: #2e7d32;
+    --md-on-success-container: #c8e6c9;
+    --md-warning: #ff9800;
+    --md-on-warning: #000000;
+    --md-warning-container: #e65100;
+    --md-on-warning-container: #ffe0b2;
+    
+    /* Outline & Shadows */
+    --md-outline: #938f99;
+    --md-outline-variant: #49454f;
+    --md-shadow: rgba(0, 0, 0, 0.3);
+    --md-scrim: rgba(0, 0, 0, 0.5);
+    
     /* Shapes */
     --md-radius-small: 8px;
     --md-radius-medium: 12px;
@@ -51,114 +56,110 @@
     --md-radius-extra-large: 28px;
 
     /* Elevation */
-    --md-elevation-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-    --md-elevation-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
-    --md-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
-    --md-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
-    --md-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+    --md-elevation-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    --md-elevation-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.2);
+    --md-elevation-3: 0px 4px 8px 3px rgba(0, 0, 0, 0.2);
+    --md-elevation-4: 0px 6px 10px 4px rgba(0, 0, 0, 0.2);
+    --md-elevation-5: 0px 8px 12px 6px rgba(0, 0, 0, 0.2);
 
     /* Typography */
-    --md-typescale-display-large-size: 57px;
-    --md-typescale-display-medium-size: 45px;
-    --md-typescale-display-small-size: 36px;
-    --md-typescale-headline-large-size: 32px;
-    --md-typescale-headline-medium-size: 28px;
-    --md-typescale-headline-small-size: 24px;
-    --md-typescale-title-large-size: 22px;
-    --md-typescale-title-medium-size: 16px;
-    --md-typescale-title-small-size: 14px;
-    --md-typescale-body-large-size: 16px;
-    --md-typescale-body-medium-size: 14px;
-    --md-typescale-body-small-size: 12px;
-    --md-typescale-label-large-size: 14px;
-    --md-typescale-label-medium-size: 12px;
-    --md-typescale-label-small-size: 11px;
-
-    /* Typography Weights */
     --font-primary: "Exo 2", sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
 }
 
+/* Base Styles */
 #app {
     font-family: var(--font-primary);
-    color: var(--md-dark-on-surface);
+    color: var(--md-on-surface);
+    background-color: var(--md-surface);
 }
 
+/* Spawn Locations Panel */
 .spawn-locations {
-    text-transform: uppercase;
     position: absolute;
     min-width: 30vh;
     width: fit-content;
     max-width: 35vh;
     top: 10vh;
     left: 10vh;
-    background-color: var(--md-dark-surface-container);
-    box-shadow: var(--md-elevation-2);
-    padding: 30px;
-    cursor: default;
-    transition: 300ms;
+    background-color: var(--md-surface-container);
+    border: 1px solid var(--md-outline-variant);
+    box-shadow: var(--md-elevation-3);
+    border-radius: var(--md-radius-large);
+    padding: 24px;
+    transition: all 0.3s ease;
 }
 
+/* Location Buttons */
 .location {
     width: 100%;
-    margin-bottom: 15px;
-    transition: 200ms;
-    cursor: pointer;
+    margin-bottom: 12px;
+    transition: all 0.2s ease;
+    background-color: var(--md-surface-container-high) !important;
+    border-radius: var(--md-radius-small) !important;
 }
 
 .v-btn.location:hover {
-    background-color: var(--md-dark-primary-container) !important;
-    transition: 300ms;
+    background-color: var(--md-primary-container) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--md-elevation-1);
 }
 
 .v-btn.location .v-btn__content {
-    font-size: var(--md-typescale-label-large-size) !important;
+    color: var(--md-on-surface) !important;
     font-weight: var(--font-weight-medium) !important;
-    color: var(--md-dark-on-surface) !important;
-    letter-spacing: 3;
+    letter-spacing: 0.1em;
 }
 
 .v-btn.location.selected {
-    background-color: var(--md-dark-primary) !important;
+    background-color: var(--md-primary) !important;
+    box-shadow: 0 0 0 1px var(--md-primary-container);
 }
 
 .v-btn.location.selected .v-btn__content {
-    color: var(--md-dark-on-primary) !important;
+    color: var(--md-on-primary) !important;
 }
 
+/* Submit Button */
 .submit-spawn {
-    background-color: var(--md-dark-success) !important;
+    background-color: var(--md-primary) !important;
     width: 100%;
-    margin-top: 1.5vh;
-    transition: 0.2s;
-    cursor: pointer;
+    margin-top: 16px;
+    border-radius: var(--md-radius-medium) !important;
+    transition: all 0.3s ease;
 }
 
 .v-btn.submit-spawn .v-btn__content {
-    font-size: var(--md-typescale-label-large-size) !important;
+    color: var(--md-on-primary) !important;
     font-weight: var(--font-weight-medium) !important;
-    color: var(--md-dark-on-success) !important;
-    letter-spacing: 3;
+    letter-spacing: 0.1em;
 }
 
+.submit-spawn:hover {
+    background-color: var(--md-primary-container) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--md-elevation-1);
+}
+
+/* Header */
 .spawn_locations-header {
     width: 100%;
-    transition: 0.2s;
-    margin-bottom: 17.5px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--md-outline-variant);
 }
 
 .spawn_locations-header > p {
-    font-family: var(--font-primary);
-    letter-spacing: 1px;
+    color: var(--md-on-surface);
     font-weight: var(--font-weight-bold);
-    position: relative;
-    color: var(--md-dark-on-surface);
+    letter-spacing: 0.1em;
     text-align: center;
-    font-size: var(--md-typescale-title-medium-size);
+    margin: 0;
 }
 
+/* Animations */
 .slide-top-fade-enter-active {
     transition: all 0.3s ease-out;
 }
@@ -169,4 +170,22 @@
 .slide-top-fade-leave-to {
     transform: translateY(-10%);
     opacity: 0 !important;
+}
+
+/* Vuetify Overrides */
+.v-application {
+    background-color: transparent !important;
+}
+
+.v-text-field.v-text-field--solo .v-input__control {
+    background-color: var(--md-surface-container-high) !important;
+    border-radius: var(--md-radius-medium) !important;
+    border: 1px solid var(--md-outline) !important;
+}
+
+.v-menu__content {
+    background-color: var(--md-surface-container) !important;
+    border: 1px solid var(--md-outline) !important;
+    border-radius: var(--md-radius-medium) !important;
+    box-shadow: var(--md-elevation-3) !important;
 }
